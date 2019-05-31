@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Body designed to be responsive with flex-box with elements aligned in a coloumn */
+body {
+  background:#f1f1f1;
+  margin:0;
+  padding:0;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+input {
+border: 1px solid white;
+background-color: #f1f1f1;
+padding: 10px;
+font-size: 16px;
+}
+
+input[type=text] {
+background-color: #f1f1f1;
+width: 100%;
+}
+
+.autocomplete-items {
+position: absolute;
+border: 1px solid #d4d4d4;
+border-bottom: none;
+border-top: none;
+z-index: 99;
+/*position the autocomplete items to be the same width as the container:*/
+top: 100%;
+left: 0;
+right: 0;
+}
+
+.autocomplete-items div {
+padding: 10px;
+cursor: pointer;
+background-color: #fff; 
+border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+background-color: #d4d4d4; 
+}
+
+/* search history design */
+.autocomplete-items > .history{
+  background-color: ghostwhite;
+}
+
+.delete-button{
+  font-weight: 800;
+  display: flex;
+  flex-direction: row;
+}
+.delete-button p{
+  line-height: 5em;
+}
+
+.history span{
+  float:right;
+  font-size:9px;
+}
+
+/* add some margin from the button */
+.search-input{
+  margin:auto;
+}
+
+.submission{
+  background-color:cornflowerblue;
+  color:white;
+  font-size:14px;
+  height:40px;
+  border:none;
+  cursor: pointer;
+}
+
+/* Design of the button for task n.1 */
+.button-task{
+  background-color:white;
+  color:black;
+  margin:1em;
+  width:70px;
+  height:70px;
+  border:none;
+  font-size:1.5em;
+  border-radius:50%;
+  cursor: pointer;
+}
+.button-task:hover{
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+}
