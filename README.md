@@ -1,5 +1,20 @@
 # WORK TASK #
 
+###Outcome from the developer
+
+The application has been built using [New York Times API](https://developer.nytimes.com/indexV2.html). The rest API gives back results on Movie Reviews and the results are limited to 20 elements. Therefore the search engine built in this work task goes through a batch of 20 movie titles. Following the task list with the ones have been completed and the ones that were not. 
+
+- Search for title, return title (or something like that)✅
+- Display partial search results in a list beneath the search field (Auto complete)✅
+- Display the selected results in an editable list beneath the search component ✅
+
+  * Selected search result should be saved with date/time stamp (as a
+search history)✅
+  * User should be able to delete a result from the list or delete the entire
+list.❌
+
+- The application should be responsive, adapting to changes of the viewport. ✅
+
 **Please read this document thoroughly** and plan your work accordingly.
 When ready, fork the repository and create a feature branch. It is in this branch we
 expect your delivery.
